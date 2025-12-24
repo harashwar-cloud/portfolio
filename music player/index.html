@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sample Page</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="BODYCLASS">
+    <div class="player-container">
+     <a>
+            <i class="fab fa-spotify"></i>
+            Music Player
+        </a>
+    </div>
+    <div class="player">
+       <!-- <a class="home_button" id="homeBtn" href="#icons">
+        <p class="b1"></p>
+        <p class="b2"></p>
+        <p class="b3"></p>
+        </a> -->
+       <div id="icons" class="icon_button">
+        <a class="mu_button" id="homeBtn" href="#">
+            <i class="fab fa-spotify"></i>
+            Home
+        </a>
+        <a class="mu_button" id="searchBtn" href="#">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            Search
+        </a>
+        <a class="mu_button" id="ProfileBtn" href="#">
+            <i class="fa-solid fa-circle-user"></i> Profile
+
+        </a>
+        </div>
+         <div class="player-controls">
+            <audio id="audioPlayer" controls src="Mobsta.mp3"></audio>
+        </div>
+        <ul class="playlist">
+            <li onclick="playSong('music/song1.mp3')">Mobsta</li>
+            <li onclick="playSong('music/song2.mp3')">Coolie Disco</li>
+            <li onclick="playSong('music/song3.mp3')">Powerhouse</li>
+            <li onclick="playSong('music/song4.mp3')">Powerhouse</li>
+            <li onclick="playSong('music/song5.mp3')">I Am The Danger</li>
+        </ul>
+
+    </div>
+    </div>
+    <script>
+    function playSong(song) {
+        var audioPlayer = document.getElementById('audioPlayer');
+        audioPlayer.src = song;
+        audioPlayer.play();
+    }
+    </script>
+</body>
+</html>
+     
